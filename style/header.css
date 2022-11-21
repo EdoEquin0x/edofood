@@ -1,0 +1,410 @@
+
+/** 
+
+Palette:
+F8D464
+F9E59C
+8D662F
+A18254
+CFBEA2
+735227
+
+Background:
+292B2C
+**/
+
+
+/** Reset du CSS **/
+* {
+    margin: 0;
+    padding: 0;
+    z-index: 0;
+}
+
+/** CSS du Header de base **/
+header {
+    position: sticky;
+    display: flex;
+    justify-content: center;
+    width: 100vw;
+    
+}
+
+/** CSS du navbar qui contiens les infos du header **/
+header nav {
+    display: flex;
+    flex-direction: row;
+    width: 100vw;
+    justify-content: space-around;
+    
+
+}
+
+/** CSS des différents blocs du header **/
+/** Bloc qui contiens la navigation **/
+.headernav {
+    display: flex;
+    font-size: 1.5em;
+    align-self: center;
+    
+    
+
+}
+
+.headernav a {
+    color: #292B2C;
+    margin-left: 10%;
+    margin-right: 10%;
+
+
+}
+
+.headernav a:hover {
+    color: #735227;
+}
+
+
+/** Bloc qui contiens le logo **/
+.headerbrand {
+    margin-left: 25%;
+    margin-right: 10%;
+    
+}
+
+/** Bloc qui contiens les actions **/
+
+.headeraction {
+    display: flex;
+    font-size: 1.5em;
+    align-self: center;
+
+}
+
+.headeraction a {
+    color: #292B2C;
+    margin-left: 10%;
+    margin-right: 10%;
+    
+
+
+
+}
+
+.headeraction a:hover {
+    color: #735227;
+    
+}
+
+.headeraction p {
+    font-size: 0.8em;
+    
+
+}
+
+.total-count {
+    color: #735227;
+    font-size: 0.8em;
+    
+}
+
+
+/** CSS pour JS -> Permet de rendre le header sticky **/
+.sticky {
+    position: fixed;
+    background-color: rgba(255, 255, 255, 0.363);
+
+    z-index: 2;
+  }
+
+
+/** CSS pour le panier **/
+
+
+#cartdisplay {
+
+}
+
+.modal-title {
+    color: black;
+    font-size: 2em;
+    justify-self: center;
+}
+
+.articlename {
+    color: #735227;
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+
+.cartchoicelisting {
+    font-size: 0.8em;
+}
+
+
+
+
+.cartchoicelistingname {
+    color: #A18254;
+    font-weight: 900;
+}
+
+table {
+    border: 2px solid #735227; 
+    margin-top: 15px;
+    margin-bottom: 15px;
+    
+}
+
+.input-group {
+    max-width: 150px;
+}
+
+.total-cartcontainer {
+    font-size: 2em;
+    color: black;
+    font-weight: 300;
+}
+
+.total-cart {
+    font-size: 1em;
+    color: #A18254;
+    font-weight: 900;
+    white-space:nowrap;
+
+}
+
+.total-cart-euro {
+    color: #A18254;
+}
+
+.delete-item {
+    background-color: #A18254;
+    width: 25px;
+    height: 25px;
+    color: white;
+    outline: none;
+    position: relative;
+    top: 7px;
+    border: 2px #8D662F solid;
+    border-radius: 5px;
+}
+
+
+
+
+.modal-footer button {
+    background-color: #A18254;
+    width: 150px;
+    height: 55px;
+    color: white;
+    outline: none;
+    border: 2px #8D662F solid;
+    border-radius: 5px;
+}
+
+
+
+
+
+.selected {
+    font-weight: bolder;
+    font-size: 1.2em;
+    color: #A18254;
+}
+
+
+
+
+.headernavmobile {
+    display: none;
+}
+
+.headerbrandmobile img {
+    display: none;
+}
+
+.headeractionmobile {
+    display: none;
+}
+
+.headericon {
+    color: #A18254;
+    font-size: 3.5em;
+}
+
+
+
+
+/* Responsive pour téléphones */
+@media screen and (max-width: 760px) and (min-width: 200px) {
+
+    .headericon:focus {
+        color: #735227;
+
+    }
+
+    .selected {
+        font-weight: bolder;
+        color: #A18254;
+        
+    }
+
+    .headericon {
+        color: #A18254;
+        font-size: 3.5em;
+    }
+        
+
+
+    .headernavmobile {
+        display: flex;
+        align-items: center;
+        
+        
+    }
+        
+    .headerbrandmobile img {
+        display: none;
+        margin-left: 0;
+        margin-right: 0;
+
+
+    }
+        
+    .headeractionmobile {
+        display: flex;
+        align-items: center;
+        
+
+        
+    }
+
+
+    .headernav {
+        display: none;
+    }
+
+    .headerbrand img{
+        display: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .headerbrand{
+        display: none;
+    }
+
+    .headeraction {
+        display: none;
+    }
+
+
+    .sticky {
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.363);
+        width: 100%;
+        z-index: 2;
+    }
+
+}
+
+@media screen and (max-width: 1020px) and (min-width: 760px) {
+
+    .headericon:focus {
+        color: #735227;
+    }
+
+    .selected {
+        font-weight: bolder;
+        color: #A18254;
+        
+    }
+
+    .headericon {
+        color: #A18254;
+        font-size: 3.5em;
+    }
+        
+
+
+    .headernavmobile {
+        display: flex;
+        align-items: center;
+
+        
+    }
+        
+    .headerbrandmobile img {
+        display: flex;
+        margin-left: 0;
+        margin-right: 0;
+        max-width: 180px;
+        min-width: 180px;
+        max-height: 140px;
+        min-height: 140px;
+        margin-left: 30px;
+        margin-right: -30px;
+
+    }
+        
+    .headeractionmobile {
+        display: flex;
+        align-items: center;
+
+        
+    }
+
+
+    .headernav {
+        display: none;
+    }
+
+    .headerbrand img{
+        display: none;
+        margin-left: 0;
+        margin-right: 0;
+    }
+
+    .headerbrand{
+        display: none;
+    }
+
+    .headeraction {
+        display: none;
+    }
+
+
+    .sticky {
+        position: fixed;
+        background-color: rgba(255, 255, 255, 0.363);
+        width: 100%;
+        z-index: 2;
+    }
+}
+
+
+/** CSS RAPIDE POUR LE FOOTER **/
+
+footer {
+    position: relative;
+    bottom: 0;
+}
+
+
+.footertext {
+    display: flex;
+    width: 100vw;
+    text-align: center;
+    justify-content: center;
+    font-weight: bolder;
+    color: #735227;
+    font-size: 1.5em;
+    background-color: #a18254a9; 
+}   
+
+.footertext a{
+
+    color: #735227;
+
+}   

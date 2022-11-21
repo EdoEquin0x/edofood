@@ -1,0 +1,104 @@
+Dans authentification on va établir un script de connexion reliée à la DDB (dans init.php) -> FAIT 
+Dans selection on va établir une liste d'article, réalisée grâce a la DDB et une barre de recherche dynamique via JS -> FAIT
+Ensuite on va s'occuper du checkout et de la gestion en temps réel du panier -> FAIT
+Une fois tout ça fait, on va s'occuper du pannel admin et de son fonctionnement, il devras permettre l'ajout, la création et la modification des articles -> FAIT
+
+Et à la fin il faudra styliser les pages via CSS et s'occuper du responsive -> Se baser sur: https://story.superfast.shop/shop
+
+
+Ajouter les vérifs sur chaque pages, vérifier que l'utilisateur est admin et tout ça
+
+/!\ PENSER A INTEGRER LE NOM ET LE FORMAT DE L'IMAGE LORS DE LA CREATION D'UN ARTICLE DANS LE MENU admin -> FAIT
+/!\ VERIFIER LE NOM DE L'ARTICLE, DEUX ARTICLES NE DOIVENT PAS AVOIR LE MEME NOM -> Débile, idée abandonnée, j'ai ajouté une vérif ID et vérif de prix
+/!\ DOCUMENTER LE CODE CART.JS
+---------
+28/10/2022:
+
+On lance le setup de la base de donnée, donc je vais la créer 
+j'ammorce aussi la création du formulaire de register et leurs scripts associés
+
+CREATE TABLE users (
+    UserID int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    login varchar(255),
+    password varchar(255),
+    authlevel varchar(255)
+);
+
+-------
+
+29/10//2022
+
+CREATE TABLE products (
+    ProductID int PRIMARY KEY NOT NULL AUTO_INCREMENT,
+    name VARCHAR(255),
+    price int NOT NULL,
+    image VARCHAR(255),
+    tag varchar(255),
+    type varchar(255),
+    ingredient1 varchar(255),
+    ingredient2 varchar(255),
+    ingredient3 varchar(255),
+    ingredient4 varchar(255),
+    ingredient5 varchar(255),
+    ingredient6 varchar(255),
+    ingredient7 varchar(255),
+    ingredient8 varchar(255),
+    ingredient9 varchar(255),
+    ingredient10 varchar(255)
+);
+
+
+
+
+
+-------
+
+31/10/2022
+
+
+Toutes les fonctionnalitées sont terminées, reste plus que l'interface
+
+
+--- 
+
+02/11//2022
+CSS 
+
+-----
+
+
+03/11/2022
+CSS, penser à remplacer les images utilisées et les textes dummy par du contenu pertinent
+
+Se termine sur: CSS du pannel admin et CSS de la page des produits
+
+/!\ PENSER A FAIRE LE CSS DES FENETRES BOOTSTRAP ET DES HOVER AUX TRUCS
+
+---
+
+04/11/2022
+
+Idée de rajouter une sélection d'autre produit en utilisant un nombre dans la base de donnée correspondant à ce qu'on peux Ajouter
+ensuite dans le listing des articles il faudra rajouter des balises select/option avec un script php qui display les options présentes selon la catégorie, ça serai cool
+de rajouter une colonne "cachée" dans la DDB pour cacher un article de ce listing, pour par exemple éviter l'abuse de menu 
+
+ALTER TABLE products ADD drinkchoicenumber int;
+ALTER TABLE products ADD otherchoicenumber int;
+ALTER TABLE products ADD pizzachoicenumber int;
+ALTER TABLE products ADD sandwichchoicenumber int;
+ALTER TABLE products ADD dessertchoicenumber int;
+
+ALTER TABLE products ADD hidden boolean;
+
+ALTER TABLE products ADD saucechoicenumber int;
+
+---
+
+
+05/11/2022
+
+CSS des autres pages terminé, système de sélection ajouté et fonctionnel
+Il ne reste plus que le responsive
+et:
+-> Documenter les codes JS
+-> Ajouter le check du role utilisateur sur chaque page avec un header si la condition est pas remplie

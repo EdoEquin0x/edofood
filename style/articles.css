@@ -1,0 +1,793 @@
+
+/** CSS RELATIF A LA BARRE DE RECHERCHE **/
+
+.searchbarcontainer{
+    margin:0 auto;
+    width:575px;
+    border-radius:5px;
+    border:1px solid #735227;
+    margin-top: 10px;
+    margin-bottom: 10px;
+}
+
+.searchbarcontainer:hover{
+    box-shadow: 1px 1px 8px 1px #735227;
+}
+
+.searchbarcontainer:focus-within{
+    box-shadow: 1px 1px 8px 1px #8D662F;
+    outline:none;
+}
+
+.searchbar{
+    height:45px;
+    border:none;
+    width:500px;
+    font-size:16px;
+    outline: none;   
+    border-radius: 5px;
+    text-indent: 25px;
+}
+
+.searchicon{
+    height:20px;
+    position:relative;
+    top:-2px;
+    left:40px;
+}
+
+
+/** CSS RELATIF AU LISTING DES ARTICLES **/
+
+.productcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+
+}
+
+.productwrapper {
+   display: flex;
+   flex-direction: column;
+   justify-content: center;
+   align-items: center;
+    
+}
+
+.productwrapper h3 {
+    color: #735227;
+    font-weight: bolder;
+    font-size: 1.5em;
+}
+
+
+/** CSS RELATIF AU BLOC CONTENANT CHAQUE ARTICLE **/
+
+
+/** Le conteneur de tout les articles d'une catégorie **/
+.productcontainer {
+    display: flex;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    width: 100vw;
+    margin-top: 10px;
+    margin-bottom: 10px;
+
+
+
+}
+
+/** Le conteneur d'un article **/
+
+.product {
+    border: 4px solid #735227;
+    display: flex;
+    flex-direction: column;
+    max-width: fit-content;
+    margin-left: 5px;
+    margin-right: 5px;
+    max-height: fit-content;
+    height:fit-content;
+    min-height: fit-content;
+    max-width: 256px;
+    width: 256px;
+    
+}
+
+
+
+/** L'image de l'article **/
+.productimagecontainer {
+    max-width: 100%;
+    min-width: 100%;
+
+}
+
+.productimagecontainer img {
+    max-width: 100%;
+    max-height: 100%;
+    min-height: 100%;
+    min-width: 100%;
+    margin-right: 1%;
+
+
+}
+
+/** Le nom de l'article **/
+.productnamecontainer {
+    display: flex;
+    color: #735227;
+    font-size: 1.2em;
+    font-weight: bolder;
+    text-align: left;
+    
+    
+    line-height: 35px;
+    
+}
+
+.productnamecontainer p {
+    max-width: 90%;
+    margin-left: 5%;
+    margin-bottom: 5px;
+}
+
+/** Les ingrédients de l'article **/
+.productingredientcontainer {
+
+}
+
+.productingredientcontainer p {
+    color: #CFBEA2;
+    font-weight: 0.8em;
+    margin-left: 5%;
+    line-height: 5px;
+}
+
+/** Le tag de l'article **/
+.producttagcontainer {
+    
+}
+
+/** Le texte "Caractéristiques" **/
+.producttaglabel {
+    color: #8D662F;
+    font-weight: 1.2em;
+    font-weight: 900;
+    margin-left: 5%;
+    line-height: 18px;
+
+}
+
+/** Le tag en lui même **/
+.producttag {
+    background-color: #CFBEA2;
+    max-width: fit-content;
+    border-radius: 15px;
+    margin-left: 5px;
+    padding: 10px;
+    font-weight: 500;
+    font-weight: 0.8em;
+    color: #8D662F;
+    margin-bottom: 5px;
+
+
+}
+
+/** Les infos d'achat **/
+.productpurchaseinfos {
+    display: flex;
+    justify-content: space-evenly;
+
+}
+
+/** Le prix **/
+.productprice {
+    color: #CFBEA2;
+    font-size: 2em;
+    font-weight: bolder;
+    position: relative;
+    top: 5px;
+}
+
+/** Le bouton d'achat **/
+.productpurchaseinfos button {
+    font-size: 0.8em;
+    color: #8D662F;
+    background-color: #CFBEA2;
+    border: none;
+    border-radius: 5px;
+    position: relative;
+    top: 15px;
+    font-weight: bolder;
+    right: -5px;
+    height: 35px;
+    padding: 5px;
+}
+
+
+/** Le texte si l'user est pas co **/
+
+.nocart {
+    color: #A18254;
+    font-weight: 1em;
+    margin-left: 5%;
+    line-height: 20px;
+}
+
+
+
+/** CSS POUR LE PANNEL ADMIN **/
+
+.addbuttoncontainer {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    max-height: 100%;
+    margin-top: 2%;
+    margin-bottom: 3%;
+}
+
+.addproduct {
+    background-color: #A18254;
+    width: 200px;
+    height: 100px;
+    font-size: 1.2em;
+    color: white;
+    outline: none;
+    border: 2px #8D662F solid;
+    border-radius: 5px;
+    right: -5px;
+    height: 35px;
+    
+}
+
+
+.buttons {
+    display: flex;
+    justify-content: left;
+} 
+
+.buttons button {
+    background-color: #A18254;
+    width: 100px;
+    height: 35px;
+    color: white;
+    outline: none;
+    border: 2px #8D662F solid;
+
+}
+
+
+/** CSS POUR LE POP-UP DE CREATION **/
+
+
+
+.productnameedit {
+    color: black;
+    font-size: 2em;
+    justify-self: center;
+}
+
+.productnamedummy {
+    display: flex;
+    font-size: 1em;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+.productnamedummy:focus {
+    outline: none;
+    border: 2px solid #8D662F;
+
+}
+
+
+
+.productpricedummy {
+    display: flex;
+    font-size: 1em;
+    width: 50%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+
+}
+
+
+.productpricedummy:focus  {
+        outline: none;
+        border: 2px solid #8D662F;
+}
+
+
+
+
+.productimagedummydiv {
+    margin-top: -20px;
+    margin-bottom: 20px;
+}
+
+.productimagedummydiv input {
+    display: none; 
+
+}
+
+.productimagedummydiv label {
+    color: white;
+    background-color: #8D662F;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    margin-top: 5px;
+
+}
+
+
+.productimagedummydiv {
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    max-width: 80%;
+    margin-left: 25px;
+}
+
+.productimagepreview p {
+    color: white;
+    background-color: #CFBEA2;
+    padding: 10px;
+    border-radius: 5px;
+    margin-left: 5px;
+    max-width: 50%;
+}
+
+.productimagepreview img {
+    max-width: 200px;
+    max-height: 200px;
+    border: 1px solid #735227;
+    margin-left: 5px;
+}
+
+.productimagepreview ul {
+    list-style: none;
+}
+
+
+
+
+.placeholder {
+    color: rgba(218, 218, 218, 0.781);
+    position: relative;
+    font-size: 1.2em;
+    font-weight: 500;
+    top: -65px;
+    right: -60px;
+    pointer-events: none;
+    cursor: default;
+    display: none;
+    
+  }
+  
+  
+  
+input:focus::placeholder {
+    color: transparent;
+}
+  
+.Formblock {
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.Formblock:focus {
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+
+.Formblock input:focus ~ .placeholder {
+    top: -80px;
+    right: -40px;
+    color: #735227;
+    transition: top .8s;
+    font-size: 0.8em;
+    display: flex;
+    
+}
+
+.Formblock select:focus ~ .placeholder {
+    top: -60px;
+    right: -30px;
+    color: #735227;
+    transition: top .8s;
+    font-size: 0.8em;
+    display: flex;
+    
+}
+
+.productediticon {
+    color: #735227;
+    position: relative;
+    top: 5px;
+}
+
+
+.imageediticon {
+    color: #735227;
+    position: relative;
+    top: 55px;
+}
+
+
+
+
+select {
+    width: 60%;
+    outline: none;
+    border: 1px solid black;
+    border-radius: 5px;
+    font-size: 1em;
+    padding: 5px;
+    font-weight: lighter;
+    
+}
+
+select:focus {
+    border: 1px solid #A18254;
+
+    
+}
+
+select {
+    -moz-appearance:none; /* Firefox */
+    -webkit-appearance:none; /* Safari and Chrome */
+    appearance:none;
+
+}
+
+/** CSS DE LA PARTIE INGREDIENT **/
+
+
+
+
+.ingredientlist {
+    display: flex;
+    border: 2px solid black;
+    font-size: 1em;
+    width: 50%;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 4px;
+    
+    box-sizing: border-box;
+
+}
+
+
+.ingredientlist:focus  {
+    outline: none;
+    border: 2px solid #8D662F;
+}
+
+
+.ingredientlist input {
+    display: flex;
+    font-size: 1em;
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+
+
+.ingredientlist input:focus {
+    outline: none;
+    border: 2px solid #8D662F;
+
+}
+
+/** CSS du bloc de paramètres **/ 
+
+
+.ingredientandparam {
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: row;
+    
+}
+
+.parameterlist {
+    display: flex;
+    border: 2px solid black;
+    font-size: 1em;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 4px;
+    max-width: 50%;
+    box-sizing: border-box;
+}
+
+
+.parameterblock {
+    margin-left: 5px;
+}
+
+
+.parametertitle {
+    font-weight: 900;
+    font-size: 1.2em;
+}
+
+
+/** CSS du dernier bloc **/
+.hiddenparameter {
+    display: flex;
+    border: 2px solid black;
+    font-size: 1em;
+    padding: 12px 20px;
+    display: inline-block;
+    border-radius: 4px;
+    max-width: 100%;
+    box-sizing: border-box;
+}
+
+.hiddenparameter label {
+    font-size: 1.5em;
+}
+
+/** CSS DU EMOJI PICKER **/
+
+.emojibutton {
+    background-color: #A18254;
+    width: 30px;
+    height: 30px;
+    position: relative;
+    
+}
+
+
+/** CSS DU PANNEL DE SUPPRESION **/
+
+.productnamedelete {
+    color: #A18254;
+    font-weight: 900;
+    font-size: 2em;
+    margin-left: 5%;
+}
+
+.deleteformblock {
+    display: flex;
+    flex-direction: row;
+    font-size: 2em;
+    font-weight: 600;
+}
+
+.deleteformblock p {
+    font-size: 1em;
+    position: relative;
+    top: -3px;
+}
+
+.warning {
+    margin-left: 5%;
+}
+
+/** Boutons des pannels **/
+
+.modal-footer button {
+    background-color: #A18254;
+    width: 150px;
+    height: 55px;
+    color: white;
+    outline: none;
+    border: 2px #8D662F solid;
+    border-radius: 5px;
+}
+
+button:hover {
+    color: black;
+    cursor: pointer;
+}
+
+label:hover {
+    color: black;
+    cursor: pointer;
+}
+
+select:hover {
+    cursor: pointer;
+}
+
+
+/** CSS POUR LE SYSTEME DE CHOIX **/
+.product select {
+    margin-left: 10px;
+}
+
+
+
+
+@media screen and (max-width: 760px) and (min-width: 200px) {
+
+
+    .searchbarcontainer{
+        margin:0 auto;
+        width:375px;
+        border-radius:5px;
+        border:1px solid #735227;
+        margin-top: 10px;
+        margin-bottom: 10px;
+    }
+    
+    .searchbarcontainer:hover{
+        box-shadow: 1px 1px 8px 1px #735227;
+    }
+    
+    .searchbarcontainer:focus-within{
+        box-shadow: 1px 1px 8px 1px #8D662F;
+        outline:none;
+    }
+    
+    .searchbar{
+        height:45px;
+        border:none;
+        width:300px;
+        font-size:16px;
+        outline: none;   
+        border-radius: 5px;
+        text-indent: 25px;
+    }
+    
+    .searchicon{
+        height:20px;
+        position:relative;
+        top:-2px;
+        left:40px;
+    }
+    
+    /** Test **/
+    .productcontainer {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+    
+    }
+    
+    .productwrapper {
+       display: flex;
+       flex-direction: column;
+       justify-content: center;
+       align-items: center;
+        
+    }
+    
+    .productwrapper h3 {
+        color: #735227;
+        font-weight: bolder;
+        font-size: 1em;
+    }
+    
+    
+    .modal-content  {
+        max-width: 400px;
+        min-width: 400px;
+        font-size: 0.8em;
+       
+ 
+    }
+    
+
+     .ingredientandparam {
+        display: flex;
+        flex-wrap: wrap;
+        flex-direction: column;
+        
+    }
+
+    .ingredientlist {
+        display: flex;
+        border: 2px solid black;
+        font-size: 1em;
+        width: 75%;
+        padding: 12px 20px;
+        display: inline-block;
+        border-radius: 4px;
+        
+        box-sizing: border-box;
+    
+    }
+    
+
+    .parameterlist {
+        display: flex;
+        border: 2px solid black;
+        font-size: 1em;
+        padding: 12px 20px;
+        display: inline-block;
+        border-radius: 4px;
+        max-width: 75%;
+        box-sizing: border-box;
+    }
+
+    .editproductdummy {
+        max-width: 500px;
+        min-width: 500px;
+        margin-left: -10px;
+
+    }
+
+    .hiddenparameter {
+        max-width: 75%;
+    }
+
+    .imagepreviewer {
+        max-width: 75%;
+    }
+
+
+
+    .modal-footer button {
+        max-width: 90px;
+        min-width: 90px;
+        max-height: 45px;
+        min-height: 45px;
+        position: relative;
+        left: -120px;
+
+    }
+
+    .deleteproductcontent {
+        max-width: 360px;
+        min-width: 360px;
+
+    }
+
+
+
+
+
+
+
+
+
+    
+}
+
+
+
+
+
+
+
+
+
+
+
+
+@media screen and (max-width: 1020px) and (min-width: 760px) {
+
+
+    .modal-content  {
+        max-width: 700px;
+        min-width: 700px;
+        margin-left: -20%;
+ 
+     }
+
+
+}

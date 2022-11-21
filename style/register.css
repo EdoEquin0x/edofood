@@ -1,0 +1,285 @@
+.registerblock {
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    width: 100vw;
+    height: 100vh;
+    text-align: center;
+    margin-top: 5%;
+    
+
+}
+
+
+.registerblock h2 {
+    font-size: 2em;
+    color: #735227;
+    font-weight: 900;
+    
+}
+
+.placeholder {
+    color: rgba(218, 218, 218, 0.781);
+    position: relative;
+    font-size: 1.2em;
+    font-weight: 500;
+    top: -65px;
+    right: -60px;
+    pointer-events: none;
+    cursor: default;
+    display: none;
+    
+  }
+  
+  
+  .registerblock input {
+    display: flex;
+    font-size: 1em;
+    width: 90%;
+    padding: 12px 20px;
+    margin: 8px 0;
+    display: inline-block;
+    border: 1px solid black;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+ 
+  
+input:focus::placeholder {
+    color: transparent;
+}
+  
+.Formblock {
+    margin-top: 15px;
+    margin-bottom: 15px;
+    margin-left: -30px;
+}
+
+.Formblock:focus {
+    margin-top: -15px;
+    margin-bottom: -15px;
+}
+
+
+.Formblock input:focus ~ .placeholder {
+    
+    top: -80px;
+    right: -80px;
+    color: #735227;
+    transition: top .8s;
+    font-size: 1em;
+    display: flex;
+    
+}
+
+
+.Formblock input {
+    margin-top: 30px;
+    
+    border: 1px solid black;
+    border-radius: 5px;
+    outline: none;
+    max-width: 80%;
+    margin-left: 25px;
+}
+
+
+.inputicon {
+    color: #735227;
+    position: relative;
+    top: 5px;
+}
+
+.text {
+    text-align: left;
+    font-size: 1em;
+    line-height: 6px;
+    margin-left: 25px;
+    font-weight: bolder;
+}
+
+input {
+    outline: none;
+    border: 2px solid black;
+    
+}
+
+input:focus {
+    border: 2px solid #735227;
+    margin-bottom: -100px;
+}
+
+button {
+    background-color: #A18254;
+    width: 150px;
+    height: 55px;
+    color: white;
+    outline: none;
+    border: 2px #8D662F solid;
+    border-radius: 5px;
+    margin-bottom: 50px;
+}
+
+
+#showpassword {
+    font-size: 1.4em;
+    color: black;
+    position: relative;
+    top: 5px;
+    margin-left: -25px;
+    cursor: pointer;
+}
+
+
+
+input:focus ~ #showpassword {
+    color: #735227;
+    position: relative;
+    top: -75px;
+    right: -250px
+    
+
+
+
+}
+
+
+.error {
+    color:#A18254;
+    font-weight: 900;
+    font-size: 1.25em;
+    text-align: center;
+    margin-top: 50px;
+    margin-bottom: -50px;
+
+}
+
+
+@media screen and (max-width: 760px) and (min-width: 200px) {
+
+
+    .registerblock h2 {
+        font-size: 1.5em;
+        color: #735227;
+        font-weight: 900;
+        
+    }
+
+    #showpassword {
+        font-size: 1.4em;
+        color: black;
+        position: relative;
+        top: 5px;
+        margin-left: -25px;
+        cursor: pointer;
+    }
+    
+    
+    
+    input:focus ~ #showpassword {
+        color: #735227;
+        position: relative;
+        top: -70px;
+        right: -190px
+        
+    
+    
+    
+    }
+
+    .inputicon {
+        color: #735227;
+        position: relative;
+        top: 5px;
+        right: -22px;
+    }
+    
+
+    .error {
+        color:#A18254;
+        font-weight: 900;
+        font-size: 1.25em;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: -10px;
+    
+    }
+
+
+    
+    .text {
+        text-align: left;
+        font-size: 1em;
+        line-height: 35px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+        word-break: break-all;
+        font-weight: bolder;
+    }
+
+
+}
+
+
+@media screen and (max-width: 1020px) and (min-width: 760px) {
+
+    .registerblock h2 {
+        font-size: 1.5em;
+        color: #735227;
+        font-weight: 900;
+        
+    }
+
+    #showpassword {
+        font-size: 1.4em;
+        color: black;
+        position: relative;
+        top: 5px;
+        margin-left: -25px;
+        cursor: pointer;
+    }
+    
+    
+    
+    input:focus ~ #showpassword {
+        color: #735227;
+        position: relative;
+        top: -70px;
+        right: -320px
+        
+    
+    
+    
+    }
+
+    .inputicon {
+        color: #735227;
+        position: relative;
+        top: 5px;
+        right: -22px;
+    }
+    
+
+    .error {
+        color:#A18254;
+        font-weight: 900;
+        font-size: 1.25em;
+        text-align: center;
+        margin-top: 50px;
+        margin-bottom: -10px;
+    
+    }
+
+
+    
+    .text {
+        text-align: left;
+        font-size: 1em;
+        line-height: 35px;
+        margin-left: 10px;
+        margin-bottom: 15px;
+        word-break: break-all;
+        font-weight: bolder;
+    }
+
+}
